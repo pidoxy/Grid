@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type=text/css>
+        .gridcontainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 500px;
+            /* height:500px; */
+            margin: 0 auto;
+            grid-template-areas: "aa bb cc" "dd bb ee" "ff gg hh" "ii . .";
+        }
+        
+        .red {
+            height: 150px;
+            background-color: red;
+            grid-area: aa;
+        }
+        
+        .blue {
+            height: 150px;
+            background-color: royalblue;
+            grid-area: bb;
+        }
+        
+        .yellow {
+            height: 150px;
+            background-color: yellow;
+            grid-area: cc;
+        }
+        
+        .indigo {
+            height: 150px;
+            background-color: indianred;
+            grid-area: dd;
+        }
+        
+        .pink {
+            height: 150px;
+            background-color: palevioletred;
+            grid-area: ee;
+        }
+        
+        .voilet {
+            height: 150px;
+            background-color: violet;
+            grid-area: ff;
+        }
+        
+        .tomato {
+            height: 150px;
+            background-color: tomato;
+            grid-area: gg;
+        }
+        
+        .teal {
+            height: 150px;
+            background-color: teal;
+            grid-area: hh;
+        }
+        
+        .black {
+            height: 150px;
+            background-color: black;
+            grid-area: ii;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gridcontainer">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="indigo"></div>
+        <div class="pink"></div>
+        <div class="voilet"></div>
+        <div class="tomato"></div>
+        <div class="teal"></div>
+        <div class="black"></div>
+
+    </div>
+</body>
+
+</html>
